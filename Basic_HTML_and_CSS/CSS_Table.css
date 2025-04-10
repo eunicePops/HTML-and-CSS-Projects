@@ -1,0 +1,21 @@
+/*..table border...*/
+table {
+	border: 1px solid silver;
+}
+
+<!.....>
+/*..hover effect...*/
+td:hover{
+	background-color: yellow;
+	color:black;
+}
+/*..setting the background of the top row...*/
+tr, th{
+	background-color: black;
+	color: cornsilk;
+}
+/*..formatting the other rows...*/
+tr, td{
+	background-color: darkgreen;
+	color: white;
+}
