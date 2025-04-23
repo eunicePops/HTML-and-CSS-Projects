@@ -12,6 +12,7 @@ h1{
     background-color: #faebd7; 
     border: 2px solid black;
     border-radius: 5%; 
+    display: inline;
 }
 
 /*---
