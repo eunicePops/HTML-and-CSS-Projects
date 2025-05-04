@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/my_portfolio.css">
+    <title>Eunice Popoola Portfolio</title>
+</head>
+<body>
+        
+    
+    <!--Navbar Section-->
+  
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About Me</a>
+            <a href="#GitHub"> My GitHub Link</a>
+            <a href="#Contact">Contact</a>
+        </div>
+    
+     <!--Breaks inserted to add space between navbar and the first heading-->
+     <br>
+     <br>
+     <br>
+
+        <!--Background video-->
+             
+               <div id="Home">
+                <video autoplay muted loop class="Video">
+                    <source  src="./images/programmingVideo.mp4" type="video/mp4">
+                    <!--Display message if video fails to run-->
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        <!--End Background Video-->    
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="heading-text">Eunice Popoola's Portfolio</h1>
+            <strong>
+                
+                <p class="center">
+                    <q>This is one of the best parts of being a coder, and an artist: 
+                        <br> the thrill of being in the middle of creating something delightful. 
+                        <br> It’s like the anticipation of eating freshly baked bread after its aroma fills the room.
+                    </q>
+                    <br> - Dr. Joy Buolamwini, Unmasking AI
+                    <br>
+                    <br> My name is Eunice Popoola. 
+                    <br> I'm a developer with expertise in software engineering, web development, and mobile application development.
+                    
+                    <br> Thank you for stopping by and enjoy! 
+                </p>
+            </strong>
+        </div>
+        <!--End Video text-->
+
+
+
+         <!--About section-->
+         <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="./program.png" alt="programing an act and art">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About Eunice</h1>
+                <p>
+                    Coding is life as it births creativity, and gives you the ability to create! 
+                    As a Mum of three, I enjoy time with my family and traveling. 
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Program, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+         <!--GitHub section-->
+         <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>My GitHub Profile</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/eunicePops" target="_blank">Eunice Popoola Github</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/the-tech-academy" target="_blank"><img src="images/github.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+        <!--End of GitHub section-->
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="./images/contact3.png" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact Me</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Input name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Type in your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+        <!--End of Contact section-->
+
+
+
+    <!--Footer section-->
+    <footer>
+        <h2 class="footer-text">&copy; 2025 
+             Eunice Popoola Portfolio
+             <a href="mailto:eunice.orakinyo@gmail.com" target="_blank">My Portfolio Website</a>
+        </h2>
+    </footer>
+    <!--End of Footer section-->
+</body>
+</html>
