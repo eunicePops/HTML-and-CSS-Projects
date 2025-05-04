@@ -1,6 +1,6 @@
 # HTML-and-CSS-Projects
 html and css projects
 
-#Projects
+# Projects
 Space Station Site 
 Movie Theater Site
