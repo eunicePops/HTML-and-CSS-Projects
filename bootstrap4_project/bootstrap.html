@@ -29,6 +29,8 @@
                   </li>
     
               </ul>
+
+
               <!-- Search Bar -->
               <div class="d-flex ms-auto">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -38,20 +40,19 @@
             </div>
             <!-- End Search Bar -->
           </nav>
-          
-
-
-          
           <!-- End Navigation Bar -->
+          
 
           <!-- Jumbotron -->
           <div class="jumbotron bg-info text-center">
-            <div class="container">
+            <div class="container py-5 px-5">
               <h1 class="display-1 text-light text-center font-weight-bold"><strong>ACADEMY CINEMAS</strong></h1>
               <p class="lead text-light "> Sit back, relax and enjoy the show.</p>
             </div>  
           </div>
           <!-- End Jumbotron -->
+
+
         </div>  
               <!-- Main Content -->
               <div class="container mt-5">
@@ -156,21 +157,137 @@
                   </div>
                 </div>
                 </div>
-            </div>>
+            </div>
               <!--  End Card Container  -->
 
-
-                        <!-- Footer -->
-              <div class="container text-center">
-                <form id="Deals">
-                  <h1 class="text-primary my-5">Sign Up for Movie Club Rewards!</h1>
-                  <div class="form-group my-5">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+             
+               <!--  Jumbotron heading-->
+               <div class="jumbotron jumbotron-fluid  mt-5 text-center">
+                    <div class="container bg-info py-5 rounded">
+                    <h1 class="display-4 hidden-sm-down" style="color: #fff; font-family: roboto; font-weight: 900; text-transform:uppercase;">
+                      Movie Deals
+                    </h1>
+                    <p class="lead">Check out our monthly deals...</p>
+                    <!--movie deals-->
+                    <button type="button" class="btn btn-outline-primary btn-lg" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+                    <!-- End movie deals -->
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+               </div>
+               <!--  End Jumbotron heading--> 
+ 
+            <!-- Modal --> <!-- form Modal -->
+          <div class="modal" tabindex="-1" role="dialog " id="register">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Register to receive movie deals</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Type in your detaiils.</p>
+
+                  <fieldset class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="First Name... ">
+                  </fieldset>  
+                  <fieldset class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Last Name... ">
+                  </fieldset> 
+                  <fieldset class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email...">
+                  </fieldset> 
+                  <fieldset class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password...">
+                  </fieldset> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
               </div>
-              <!-- End Footer -->
+            </div>
+          </div>
+          <!-- End form Modal -->
+
+        <!-- Carousel -->
+<div class="container my-5">
+  <div class="mx-auto" style="max-width: 600px;">
+
+  <h1 class="text-center mb-4">Featured Movies</h1>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner rounded shadow">
+      <div class="carousel-item active">
+        <img src="./Img/movie_1.png" class="d-block w-100" alt="Man on Fire by Denzel Washington">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded px-3 py-2">
+          <h5>Man on Fire</h5>
+          <p>Denzel Washington delivers a powerful performance in this action drama.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./Img/movie_2.png" class="d-block w-100" alt="G 50 by Viola Davis">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded px-3 py-2">
+          <h5>G 50</h5>
+          <p>An inspirational story starring the brilliant Viola Davis.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./Img/movie_3.png" class="d-block w-100" alt="The Forge by The Kendrick Brothers">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded px-3 py-2">
+          <h5>The Forge</h5>
+          <p>From the Kendrick Brothers — a story of purpose and passion.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+</div>
+<!-- End Carousel -->
+
+
+                        <!-- Signup form -->
+             <div class="row">         
+              <div class="container text-center col-md-6" id="Deals">
+                <div class="container text-center">
+                  <h1 class="text-primary my-5">Sign Up for Movie Club Rewards!</h1>
+
+                  <div class="input-group mb-5 input-group-sm">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary btn-info popover-dismiss"  data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your
+                    email toreceive great movie deals and updates!">
+                      Submit
+                    </button>
+                  </span>
+                </div>
+                </div>
+              </div>
+            </div>
+              <!-- End signup form  -->
 
             <!-- Footer Navigation Bar -->
             <div class="container my-5">
@@ -199,9 +316,22 @@
     <!-- End Container -->
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLa4U6z9Om9C/lrrYb6Yk5jAm5jFvVx0U4Rs" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+     <!-- jQuery (required) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="..." crossorigin="anonymous"></script>
+
+<!-- Popper.js (before Bootstrap.js) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="..." crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="..." crossorigin="anonymous"></script>
+
+    
+    <script>
+      $('.popover-dismiss').popover({
+        trigger: 'focus'
+      }); 
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
 </html>
